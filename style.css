@@ -33,16 +33,20 @@ h6{
 }
 
 .homePageTxt{
+    position: absolute;
+    left: 0px;
     color: white;
+    animation: moveIn 2s;
+    animation-fill-mode: forwards;
 }
 
 .info{
-    width: 600px;
+    width: 580px;
     margin: 10px;
     font-size: 25px;
     position: absolute;
     top: 250px;
-    left: 60px;
+    left: 100px;
     color: white;
 }
 
@@ -55,6 +59,10 @@ h6{
     padding: 10px;
     font-size: 20px;
     background-color: rgb(198, 198, 198);
+}
+
+.sectionItem:hover{
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.441);
 }
 
 h1{
@@ -135,5 +143,15 @@ nav a:hover{
 @media(max-width: 400px){
     .sidebar{
         width: 100%;
+    }
+}
+
+@keyframes moveIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+        transform: translateX(100px);
     }
 }
