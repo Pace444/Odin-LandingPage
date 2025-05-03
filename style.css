@@ -8,8 +8,59 @@ body{
     min-height: 100vh;
 }
 
-nav{
+.section{
+    border-radius: 25px;
+    display: flex;
+    position: absolute;
+    top: 200px;
+    justify-content: space-between;
+    align-items: center;
     background-color: white;
+    width: 48%;
+    height: 400px;
+    margin-left: 50%;
+    margin-bottom: 100px;
+    margin-right: 0px;
+    text-align: left;
+}
+
+h6{
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.info{
+    width: 600px;
+    margin: 10px;
+    font-size: 25px;
+    position: absolute;
+    top: 250px;
+    left: 60px;
+}
+
+.sectionItem{
+    margin: 10px;
+    border-radius: 25px;
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(198, 198, 198);
+}
+
+h1{
+    position: absolute;
+    left: 50px;
+    margin-top: 70px;
+    width: 20%;
+    font-size: 60px;
+}
+
+nav{
+    background-color: #181e27;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -31,11 +82,11 @@ nav a{
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: black;
+    color: white;
 }
 
 nav a:hover{
-    background-color: #f0f0f0;
+    background-color: #2c3542;
 }
 
 .sidebar{
